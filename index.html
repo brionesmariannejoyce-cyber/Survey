@@ -14,8 +14,9 @@
             Please answer the following questions honestly and to the best of your ability. Your feedback is valuable to us and will help us improve our services.
         </p>
     </header>
+        </div>
     <form action="/survey-submit" method="POST">
-        <fieldset>
+        <fieldset class="info">
             <legend>Let's Get to Know You!</legend>
         <label for="full-name">Full Name:</label>
         <input type="text"
@@ -38,17 +39,18 @@
             name="email"
             placeholder="optional">
         </fieldset>
-        <fielset>
+        <br>
+        <fieldset class="set1">
             <legend>Over the last 2 weeks, how often have you been bothered by the following problems</legend>
                <label for="not-really">Not really</label>
-            <input type="checkbox" id="not-really" name="not-really-option" value="not-really-option">
+            <input type="radio" id="not-really" name="not-really-option" value="not-really-option">
             <label for="several-days">Several Days</label>
-            <input type="checkbox" id="several-days" name="several-days-option" value="several-days-option"> 
+            <input type="radio" id="several-days" name="several-days-option" value="several-days-option"> 
             
-        </fielset>
+        </fieldset>
         
 <!--TODO=Make a table man use tr,th(bold header),td(normal)-->
     </form>
-        </div>
+       
     </body>
 </html>
