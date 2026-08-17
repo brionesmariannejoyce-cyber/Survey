@@ -14,12 +14,15 @@
         </p>
     </header>
     <form action="/survey-submit" method="POST">
+        <fieldset>
+            <legend>Let's Get to Know You!</legend>
         <label for="full-name">Full Name:</label>
         <input type="text"
             id="full-name" 
             name="full-name" 
             required
             placeholder="full name">
+        <br>
         <label for="age">Age:</label>
         <input type="number"
             id="age"
@@ -27,11 +30,21 @@
             required
             min="10"
             max="100">
+        <br>
         <label for="email">Email:</label>
         <input type="email"
             id="email"
             name="email"
             placeholder="optional">
+        </fieldset>
+        <fielset>
+            <legend>Over the last 2 weeks, how often have you been bothered by the following problems</legend>
+               <label for="not-really">Not really</label>
+            <input type="checkbox" id="not-really" name="not-really-option" value="not-really-option">
+            <label for="several-days">Several Days</label>
+            <input type="checkbox" id="several-days" name="several-days-option" value="several-days-option"> 
+            
+        </fielset>
         
 <!--TODO=Make a table man use tr,th(bold header),td(normal)-->
     </form>
