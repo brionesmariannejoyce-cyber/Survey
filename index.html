@@ -25,29 +25,34 @@
             required
             placeholder="full name">
         <br>
-        <label for="age">Age:</label>
+        <label for="email">Email:</label>
+        <input type="email"
+            id="email"
+            name="email"
+            placeholder="optional">
+            <br>
+             <label for="age">Age:</label>
         <input type="number"
             id="age"
             name="age"
             required
             min="10"
             max="100">
-        <br>
-        <label for="email">Email:</label>
-        <input type="email"
-            id="email"
-            name="email"
-            placeholder="optional">
         </fieldset>
         <br>
         <fieldset class="set1">
             <legend>Over the last 2 weeks, how often have you been bothered by the following problems</legend>
                <label for="not-really">Not really</label>
-            <input type="radio" id="not-really" name="not-really-option">
+            <input type="radio" id="not-really" name="notreally" value="not-really-option">
             <label for="several-days">Several Days</label>
-            <input type="radio" id="several-days" name="several-days-option"> 
-            
+            <input type="radio" id="several-days" name="several-days" value="several-days-option"> 
         </fieldset>
+        <fieldset class="set2">
+            <legend>Not being able to stop or control worrying</legend>
+            <label for="not-really1">Not really</label>
+            <input type="radio" id="not-really1" name="notreally1" value="not-really1-option">
+        </fieldset>
+            
         
 <!--TODO=Make a table man use tr,th(bold header),td(normal)-->
     </form>
